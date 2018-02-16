@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/update_fragment">
+
+    <ScrollView
+        android:id="@+id/scroll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/verify_dispQuestion"
+                tools:text="Question"
+                android:layout_marginLeft="11dp"
+                android:textColorLink="@android:color/holo_purple"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_purple"
+                android:text="Select your registered question and answer it(Security Question)*"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verify_selectQuestion"
+                android:layout_marginLeft="11dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/verify_answer"
+                android:layout_marginLeft="11dp"
+                android:hint="Your Answer"/>
+
+            <Button
+                android:id="@+id/update_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                tools:layout_gravity="center"
+                android:bottomRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:backgroundTint="@color/colorAccent"
+                />
+
+            <TextView
+                android:id="@+id/update_ptid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/update_ptname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/patient_name"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/update_patientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="invisible"
+                android:textColor="?attr/colorControlNormal"/>
+
+            <TextView
+                android:id="@+id/update_dispMotherName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="Gurdian/Mother Name*"
+                android:visibility="invisible"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+
+            <EditText
+                android:id="@+id/update_mothersName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="invisible"
+                android:textColor="?attr/colorControlNormal"/>
+
+
+            <TextView
+                android:id="@+id/update_dispbloodgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/bloodGroup"
+                android:visibility="invisible"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+            <Spinner
+                android:id="@+id/update_bloodgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:textColor="?attr/colorControlNormal"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/update_dispSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/sex"
+                android:visibility="invisible"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+            <Spinner
+                android:id="@+id/update_selectSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:textColor="?attr/colorControlNormal"
+                android:textStyle="normal"/>
+
+
+            <TextView
+                android:id="@+id/update_tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/date_of_birth"
+                android:visibility="invisible"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+            <LinearLayout
+                android:id="@+id/update_dispDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/update_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginStart="11dp"
+                    android:textColor="?attr/colorControlNormal"/>
+
+                <Spinner
+                    android:id="@+id/update_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorControlNormal"/>
+
+                <Spinner
+                    android:id="@+id/update_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorControlNormal"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/update_dispPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/address"
+                android:visibility="invisible"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+
+            <EditText
+                android:id="@+id/update_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:visibility="invisible"
+                android:textColor="?attr/colorControlNormal"/>
+
+
+            <TextView
+                android:id="@+id/update_dispMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/email_id"
+                android:visibility="invisible"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+
+            <EditText
+                android:id="@+id/update_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:visibility="invisible"
+                android:textColor="?attr/colorControlNormal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_dispQuestion"
+                tools:text="Question"
+                android:layout_marginLeft="11dp"
+                android:textColorLink="@android:color/holo_purple"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_purple"
+                android:visibility="invisible"
+                android:text="@string/securityQuestion"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_selectQuestion"
+                android:layout_marginLeft="11dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/update_answer"
+                android:visibility="invisible"
+                android:layout_marginLeft="11dp"
+                android:hint="Your Answer"/>
+
+            <Button
+                android:id="@+id/update_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                tools:layout_gravity="center"
+                android:bottomRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:backgroundTint="@color/colorAccent"
+                />
+
+            <Button
+                android:id="@+id/update_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                tools:layout_gravity="center"
+                android:bottomRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:backgroundTint="@color/colorAccent"
+                />
+
+
+            <TextView
+                android:text="* fields are mandatory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_mandatoryField"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="11dp"
+                android:visibility="invisible"
+                android:textStyle="normal|bold"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

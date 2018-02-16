@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ptname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/patient_name"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/patientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="?attr/colorControlNormal"/>
+
+            <TextView
+                android:id="@+id/dispMotherName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/mother_s_name"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+
+            <EditText
+                android:id="@+id/mothersName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="?attr/colorControlNormal"/>
+
+
+            <TextView
+                android:id="@+id/dispSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/sex"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+            <Spinner
+                android:id="@+id/selectSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:textColor="?attr/colorControlNormal"
+                android:textStyle="normal"/>
+
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/date_of_birth"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+            <LinearLayout
+                android:id="@+id/dispDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginStart="11dp"
+                    android:textColor="?attr/colorControlNormal"/>
+
+                <Spinner
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorControlNormal"/>
+
+                <Spinner
+                    android:id="@+id/year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorControlNormal"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:text="@string/bloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dispBloodGroup"
+                android:textColor="@android:color/holo_purple"
+                android:layout_marginLeft="11dp"
+                android:textStyle="normal|bold"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bloodGroup"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/dispPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/address"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:textColor="?attr/colorControlNormal"/>
+
+
+            <TextView
+                android:id="@+id/dispPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/phone_number"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:textColor="?attr/colorControlNormal"
+                android:hint="Mobile number"/>
+
+            <TextView
+                android:id="@+id/dispMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/email_id"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="?attr/colorControlNormal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dispQuestion"
+                tools:text="Question"
+                android:layout_marginLeft="11dp"
+                android:textColorLink="@android:color/holo_purple"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/holo_purple"
+                android:text="@string/securityQuestion"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectQuestion"
+                android:layout_marginLeft="11dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/answer"
+                android:layout_marginLeft="11dp"
+                android:hint="Your Answer"/>
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                tools:layout_gravity="center"
+                android:elevation="0dp"
+                android:textStyle="normal|bold"
+                android:backgroundTint="@color/colorAccent"
+                android:bottomRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:foregroundGravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:text="@string/mandatoryFields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mandatoryField"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="11dp"
+                android:textStyle="normal|bold"/>
+
+            <Space
+                android:layout_width="match_parent"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Disease Detected"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+
+    <View
+        android:id="@+id/d1"
+        style="@style/L_Divider"
+        android:background="@android:color/darker_gray"
+        />
+
+    <TextView
+        android:id="@+id/dname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="disease_name"/>
+
+    <View
+        android:id="@+id/d2"
+        style="@style/L_Divider"
+        android:background="@android:color/darker_gray"
+        />
+
+    <TextView
+        android:id="@+id/dang_sym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="dangerous_sym"/>
+
+    <TextView
+        android:id="@+id/non_dang_sym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="non_dangerous_symp"/>
+
+</LinearLayout>

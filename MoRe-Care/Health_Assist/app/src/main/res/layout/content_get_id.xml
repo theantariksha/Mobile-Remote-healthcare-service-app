@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/getid_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.example.ju_group.health_assist.Login_fragment"
+                tools:showIn="@layout/activity_get_id">
+
+
+    <ScrollView
+        android:id="@+id/scroll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:text="@string/phone_number"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="normal|bold"
+                />
+
+            <EditText
+                android:id="@+id/getid_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:ems="10"
+                android:hint="Mobile number"
+                android:inputType="phone"/>
+
+            <TextView
+                android:id="@+id/getid_ptname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/patient_name"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+            <EditText
+                android:id="@+id/getid_patientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="?attr/colorControlNormal"/>
+
+            <TextView
+                android:id="@+id/getid_tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/date_of_birth"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+            <LinearLayout
+                android:id="@+id/getid_dispDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/getid_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginStart="11dp"
+                    android:textColor="?attr/colorControlNormal"/>
+
+                <Spinner
+                    android:id="@+id/getid_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorControlNormal"/>
+
+                <Spinner
+                    android:id="@+id/getid_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorControlNormal"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/getid_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:text="@string/security_ques"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold|normal"/>
+
+            <Spinner
+                android:id="@+id/getid_choice_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:textColor="?attr/colorControlNormal"/>
+
+
+            <EditText
+                android:id="@+id/getid_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:ems="10"
+                android:hint="Your answer"
+                android:inputType="textPersonName"
+                android:textColor="?attr/colorControlNormal"/>
+
+            <Button
+                android:id="@+id/getid_buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                tools:layout_gravity="center"
+                android:bottomRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:backgroundTint="@color/colorAccent"
+                />
+
+            <TextView
+                android:id="@+id/getid_mandatoryField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginRight="10dp"
+                android:text="* fields are mandatory"
+                android:textStyle="normal|bold"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

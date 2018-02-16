@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "394615989383",
+    "firebase_url": "https://healthassistant-d74a6.firebaseio.com",
+    "project_id": "healthassistant-d74a6",
+    "storage_bucket": "healthassistant-d74a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394615989383:android:abe6776c86d8f36e",
+        "android_client_info": {
+          "package_name": "com.example.ju_group.health_assist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394615989383-7un4njuh9rrt500bhl3kn2j9osamhjt8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ju_group.health_assist",
+            "certificate_hash": "8BE1382C9E7EAA9118B32281EF4B686AC78A12AC"
+          }
+        },
+        {
+          "client_id": "394615989383-720cvjnvf1gv3ngggsormvrgo7r7umoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEumnY0m_TaBwbm-rxIZe224dQayS1RvI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394615989383-720cvjnvf1gv3ngggsormvrgo7r7umoe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
